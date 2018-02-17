@@ -1,12 +1,11 @@
-public class RightTriangle implements Shapes {
+public class Rectangle implements Shapes {
    private double side1, side2, perimeter, area;
    
-   public RightTriangle(double side1,double side2){
+   public Rectangle(double side1,double side2){
       this.side1 = side1;
       this.side2 = side2;
-      double hypotenuse = Math.pow(Math.pow(this.side1, 2) + Math.pow(this.side2, 2),0.5);
-      this.perimeter = this.side1 + this.side2 + hypotenuse;
-      this.area = 0.5 * this.side1 * this.side2;
+      this.area = this.side1 * this.side2;
+      this.perimeter = (this.side1 * 2) + (this.side2 * 2);
    }
    
    public double getArea(){
@@ -25,7 +24,7 @@ public class RightTriangle implements Shapes {
       }
    }
    public String toString(){
-      String toString = "Right Triangle  perimeter: " + this.perimeter + "   area: " + this.area;
+      String toString = "Rectangle  perimeter: " + this.perimeter + "   area: " + this.area;
       return toString;
    }
 }

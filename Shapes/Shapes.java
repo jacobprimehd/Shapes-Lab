@@ -1,4 +1,4 @@
-public interface class Shapes {
-   double getArea(double area);
-   double getPerimeter(double perimeter);
+public interface Shapes {
+   double getArea();
+   double getPerimeter();
 }
